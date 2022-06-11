@@ -22,7 +22,7 @@ def main():
                         access_token_secret = AccessTokenSecret)
 
     # Replace the text with whatever you want to Tweet about
-    response = client.create_tweet(text='hello world')
+    # response = client.create_tweet(text='hello world')
 
     print(response)
 
