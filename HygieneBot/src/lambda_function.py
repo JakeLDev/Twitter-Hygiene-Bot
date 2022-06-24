@@ -30,7 +30,7 @@ def lambda_handler(event, context):
                     access_token_secret = access_token_secret)
 
     print("Get tweet from csv file")
-    tweets_file = ROOT / event["HygieneType"] # Make message the name of the file, e.g. ToothbrushSwap.txt
+    tweets_file = ROOT / event["Message"] # Make message the name of the file, e.g. ToothbrushSwap.txt
     # tweets_file = "src/ToothbrushSwap.txt" # For Local Testing
     tweet = get_tweet(tweets_file)
 
